@@ -9,7 +9,7 @@ h3 {
 
 }
 .drinks-days {
-	background: url("../images/timetable.png");
+
 	margin: 25px auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -26,4 +26,10 @@ img {
 }
 .home body {
 	background-color: rgba(1,1,1,1);
+}
+.row {
+	border: 1px solid black;
+}
+.col-sm-4 {
+	border: 1px solid black;
 }
