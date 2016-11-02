@@ -1,0 +1,29 @@
+h1 {
+	font-family: "Pacifico", cursive;
+	font-size: 70px;
+	color: white;
+	text-align: center;
+	margin: 225px 0 225px 0;
+}
+h3 {
+
+}
+.drinks-days {
+	background: url("../images/timetable.png");
+	margin: 25px auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#drinks-intro-header {
+	background-image: url("../images/home/3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+img {
+	border: 7px solid black;
+}
+.home body {
+	background-color: rgba(1,1,1,1);
+}
