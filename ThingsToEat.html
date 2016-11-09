@@ -49,7 +49,8 @@
       <p>Forego the classic Sunday lunch with a delicious pizza, cooked in a wood-oven with fresh ingredients and the finest Italian antipasti. Pizza East's branch in Shoreditch is a vast, warehouse with a boho feel, leaving you putting the world to rights with your friends over the most delicious pizza pies. You can even take going 'out' to going 'out out', as this little baby has an underground club called Concrete that will leave you partying off the pizza. Oh, and there's a photobooth. Still not convinced? You're crazy. Meet you by the bar?</p>
     </div>
     <div class="col-sm-4">
-      <p>Google maps will go here</p>
+      <p>Location 1</p>
+            <div id="location1" class="map"> </div>
     </div>
   </div>
 </div>
@@ -64,7 +65,8 @@
       <p>Thai food is a definite favourite with Londoners, and a renowned favourite amongst them all is the infamous Busaba. We would recommend the central Soho branch for a bowl of their delicious prawn Pad Thai, and soak up the atmosphere with the open plan seating area. Whilst it is a chain, and not one of London's hidden gems, it's popular for a reason. Believe the hype with this one, believe us, you won't be disappointed.</p>
     </div>
     <div class="col-sm-4">
-      <p>Google maps will go here</p>
+       <p>Location 2</p>
+      <div id="location2" class="map"> </div>
     </div>
   </div>
 </div>
@@ -79,9 +81,48 @@
       <p>A roundabout isn't the first place you'd go to for some killer food, but trust us - you'll never look at one in the same way after visiting The Magic Roundabout. Located in the middle of Old Street Roundabout, and accessed by a secret staircase, an air of mystery clouds The Magic Roundabout that makes it that little bit more exciting. It's a party space offering eats, beats, and booze, with super fun decor that will make you never want to leave. Grab one of their famous juicy beefburgers laden with extradordinary ingredients, and grab a seat amongst the action. The Magic Roundabout truly will stick with you, and get you bringing your friends back for more.</p>
     </div>
     <div class="col-sm-4">
-      <p>Google maps will go here</p>
+      <p>Location 3</p>
+      <div id="location3" class="map"> </div>
     </div>
   </div>
 </div>
+<script>
+      function initMap() {
+        var maps=[];
+        var markers=[];
+        var locations=[
+        {
+          position: {lat:50, lng:0},
+          id: "location1"
+         },
+         {
+
+          position: {lat:50, lng:0},
+          id: "location2"
+         },
+         {
+
+          position: {lat:50, lng:0},
+          id: "location3"
+         },
+
+        ];
+        locations.forEach(function(location,index){
+          maps[index] = new google.maps.Map(document.getElementById(location.id), {
+            zoom: 12,
+            center: location.position
+          });
+          markers[index] = new google.maps.Marker({
+            position: location.position,
+            map: maps[index]
+          });  
+        })
+       
+        };
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFTx-tEJIn-8sxvFXdVp6j3PF07ZoALQ&callback=initMap">
+    </script>
 </body>
 </html>
