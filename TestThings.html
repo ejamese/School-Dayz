@@ -158,38 +158,38 @@
 </div>
 <script>
       function initMap() {
-        var position1 = {lat: 51.5073, lng: 0.1657};
-        var position2 = {lat: -25.334, lng: 131.044};
-        var position3 = {lat: -25.363, lng: 131.4664};
+        var maps=[];
+        var markers=[];
+        var locations=[
+        {
+          position: {lat:50, lng:0},
+          id: "Location1"
+         },
+         {
 
-        var map1 = new google.maps.Map(document.getElementById('Location1'), {
-          zoom: 12,
-          center: position1
-        });
-        var marker1 = new google.maps.Marker({
-          position: position1,
-          map: map1
-        });
+          position: {lat:50, lng:0},
+          id: "Location2"
+         },
+         {
 
+          position: {lat:50, lng:0},
+          id: "Location3"
+         },
 
-        var map2 = new google.maps.Map(document.getElementById('Location2'), {
-          zoom: 12,
-          center: position2
-        });
-        var marker2 = new google.maps.Marker({
-          position: position2,
-          map: map2
-        });
-
-        var map3 = new google.maps.Map(document.getElementById('Location3'), {
-          zoom: 12,
-          center: position3
-        });
-        var marker3 = new google.maps.Marker({
-          position: position3,
-          map: map3
-        });
-      }
+        ];
+        locations.forEach(function(location,index){
+          maps[index] = new google.maps.Map(document.getElementById(location.id), {
+            zoom: 12,
+            center: location.position
+          });
+          markers[index] = new google.maps.Marker({
+            position: location.position,
+            map: maps[index]
+          });  
+        })
+       
+        };
+      
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFTx-tEJIn-8sxvFXdVp6j3PF07ZoALQ&callback=initMap">
