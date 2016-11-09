@@ -49,7 +49,8 @@
       <p>.....</p>
     </div>
     <div class="col-sm-4">
-      <p>Google maps will go here</p>
+      <p>Location 1</p>
+      <div id="location1"> </div>
     </div>
   </div>
 </div>
@@ -64,7 +65,8 @@
       <p>....</p>
     </div>
     <div class="col-sm-4">
-      <p>Google maps will go here</p>
+      <p>Location 2</p>
+      <div id="location2"> </div>
     </div>
   </div>
 </div>
@@ -79,9 +81,48 @@
       <p>....</p>
     </div>
     <div class="col-sm-4">
-      <p>Google maps will go here</p>
+      <p>Location 3</p>
+      <div id="location3"> </div>
     </div>
   </div>
 </div>
+<script>
+      function initMap() {
+        var maps=[];
+        var markers=[];
+        var locations=[
+        {
+          position: {lat:50, lng:0},
+          id: "location1"
+         },
+         {
+
+          position: {lat:50, lng:0},
+          id: "location2"
+         },
+         {
+
+          position: {lat:50, lng:0},
+          id: "location3"
+         },
+
+        ];
+        locations.forEach(function(location,index){
+          maps[index] = new google.maps.Map(document.getElementById(location.id), {
+            zoom: 12,
+            center: location.position
+          });
+          markers[index] = new google.maps.Marker({
+            position: location.position,
+            map: maps[index]
+          });  
+        })
+       
+        };
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFTx-tEJIn-8sxvFXdVp6j3PF07ZoALQ&callback=initMap">
+    </script>
 </body>
 </html>
