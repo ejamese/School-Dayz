@@ -37,7 +37,7 @@ img {
 	background-color: rgba(1,1,1,1);
 	padding: 50px 30px 50px 80px;
 }
-#map{
+#Location1, #Location2, #Location3{
         height: 200px;
         width: 100%;
        }

@@ -73,6 +73,7 @@
     </div>
       <div class="col-md-3">
   <h2> Location</h2>
+  <div id="Location1"></div> 
            </div>
   </div>
 </div>
@@ -109,23 +110,8 @@
     </div>
       <div class="col-md-3">
   <h2> Location2</h2>
-  <div id="map2"></div>
-  <script>
-      function initMap2() {
-        var uluru = {lat: -22.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map2'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-                  });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFTx-tEJIn-8sxvFXdVp6j3PF07ZoALQ&callback=initMap2">
-    </script>
+  <div id="Location2"></div>
+  
        </div>
   </div>
 </div>
@@ -162,27 +148,48 @@
     </div>
       <div class="col-md-3">
   <h2> Location3</h2>
-   <div id="map"></div>
-   
-     <script>
+   <div id="Location3"></div>
+      </div>
+  </div>
+</div>
+<script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var position1 = {lat: -25.363, lng: 131.044};
+        var position2 = {lat: -25.334, lng: 131.044};
+        var position3 = {lat: -25.363, lng: 131.4664};
+        
+        var map1 = new google.maps.Map(document.getElementById('Location1'), {
           zoom: 4,
-          center: uluru
+          center: position1
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+        var marker1 = new google.maps.Marker({
+          position: position1,
+          map: map1
+        });
+
+
+        var map2 = new google.maps.Map(document.getElementById('Location2'), {
+          zoom: 4,
+          center: position2
+        });
+        var marker2 = new google.maps.Marker({
+          position: position2,
+          map: map2
+        });
+
+        var map3 = new google.maps.Map(document.getElementById('Location3'), {
+          zoom: 4,
+          center: position3
+        });
+        var marker3 = new google.maps.Marker({
+          position: position3,
+          map: map3
         });
       }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFTx-tEJIn-8sxvFXdVp6j3PF07ZoALQ&callback=initMap">
     </script>
-      </div>
-  </div>
-</div>
-</body>
+    </body>
 </html>
 
