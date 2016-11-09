@@ -154,12 +154,12 @@
 </div>
 <script>
       function initMap() {
-        var position1 = {lat: -25.363, lng: 131.044};
+        var position1 = {lat: 51.5073, lng: 0.1657};
         var position2 = {lat: -25.334, lng: 131.044};
         var position3 = {lat: -25.363, lng: 131.4664};
-        
+
         var map1 = new google.maps.Map(document.getElementById('Location1'), {
-          zoom: 4,
+          zoom: 12,
           center: position1
         });
         var marker1 = new google.maps.Marker({
@@ -169,7 +169,7 @@
 
 
         var map2 = new google.maps.Map(document.getElementById('Location2'), {
-          zoom: 4,
+          zoom: 12,
           center: position2
         });
         var marker2 = new google.maps.Marker({
@@ -178,7 +178,7 @@
         });
 
         var map3 = new google.maps.Map(document.getElementById('Location3'), {
-          zoom: 4,
+          zoom: 12,
           center: position3
         });
         var marker3 = new google.maps.Marker({
