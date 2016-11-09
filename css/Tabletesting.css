@@ -22,22 +22,32 @@ h1 {
 	margin: 25px auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	font-size: large;
+	color: white;
 }
-#drinks-intro-header {
+
+
+img {
+	border: 7px solid black;
+}
+<<<<<<< Updated upstream
+.homebody {
+	background-color: rgba(1,1,1,1);
+	padding: 50px 30px 50px 80px;
+}
+#Location1, #Location2, #Location3{
+=======
+
+#map{
+>>>>>>> Stashed changes
+        height: 200px;
+        width: 100%;
+       }
+
+body {
 	background-image: url("../images/home/3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: local;
 	background-size: cover;
 }
-img {
-	border: 7px solid black;
-}
-.homebody {
-	background-color: rgba(1,1,1,1);
-	padding: 50px 30px 50px 80px;
-}
-#Location1, #Location2, #Location3{
-        height: 200px;
-        width: 100%;
-       }

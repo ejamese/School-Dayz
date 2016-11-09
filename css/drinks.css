@@ -15,17 +15,19 @@ h3 {
 	margin: 25px auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-#drinks-intro-header {
-	background-image: url("../images/home/3.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
+	border-radius: 1%;
 }
 img {
 	border: 7px solid black;
 }
 .home body {
 	background-color: rgba(1,1,1,1);
+}
+
+body {
+	background-image: url("../images/home/3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
