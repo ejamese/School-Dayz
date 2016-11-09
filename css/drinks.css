@@ -9,13 +9,11 @@ h3 {
 
 }
 
-
 .drinks-days {
 	background: url("../images/timetable.png");
 	margin: 25px auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-radius: 1%;
 }
 img {
 	border: 7px solid black;
