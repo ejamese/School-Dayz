@@ -78,6 +78,10 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
+.drinks-days a {
+	font-family: "Pacifico", cursive;
+	color: #fff;
+}
 
 <style type="text/css">
  
