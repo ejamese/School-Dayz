@@ -5,12 +5,17 @@ h1 {
 	text-align: center;
 	margin: 225px 0 225px 0;
 }
-p, h2
-{
+p{
+	font-family:"Tahoma", cursive;
+	font-size:19px;
+	color: white;
+}
+h2{
 	font-family:"Pacifico", cursive;
 	font-size:19px;
 	color: white;
 }
+
 h4{
 	font-family: "Pacifico", cursive;
 	font-size: 100px;
