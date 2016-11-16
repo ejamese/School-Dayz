@@ -60,7 +60,7 @@
 
 
     <div class="col-sm-4">
-      <p>Location 1</p>
+      <p>Somerset House</p>
             <div id="location1" class="map"> </div>
     </div>
   </div>
@@ -83,7 +83,7 @@
       </p>
     </div>
     <div class="col-sm-4">
-      <p>Location 2</p>
+      <p>Southwark Cathedral</p>
       <div id="location2" class="map"> </div>
     </div>
   </div>
@@ -106,7 +106,7 @@
       </p>
     </div>
     <div class="col-sm-4">
-      <p>Location 3</p>
+      <p>Carnaby Street</p>
       <div id="location3" class="map"> </div>
     </div>
   </div>
@@ -117,24 +117,24 @@
         var markers=[];
         var locations=[
         {
-          position: {lat:50, lng:0},
+          position: {lat:51.53010, lng:0.1259},
           id: "location1"
          },
          {
 
-          position: {lat:50, lng:0},
+          position: {lat:51.5061, lng:0.0896},
           id: "location2"
          },
          {
 
-          position: {lat:50, lng:0},
+          position: {lat:51.515419, lng:0.141099},
           id: "location3"
          },
 
         ];
         locations.forEach(function(location,index){
           maps[index] = new google.maps.Map(document.getElementById(location.id), {
-            zoom: 12,
+            zoom: 13,
             center: location.position
           });
           markers[index] = new google.maps.Marker({
